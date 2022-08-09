@@ -4,6 +4,6 @@ RUN apt-get install -y git autoconf automake make gcc zlib1g-dev libbz2-dev libl
 RUN  mkdir /bcftools
 COPY . /bcftools
 RUN cd /bcftools && git clone --recurse-submodules https://github.com/samtools/htslib.git
-RUN cd /bcftools && ./configure && make install
+RUN cd /bcftools && autoheader && autoconf && ./configure && make install
 ENTRYPOINT ["/usr/bin/bcftools"]
 CMD ["--version"]
