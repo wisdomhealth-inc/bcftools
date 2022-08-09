@@ -1,0 +1,2193 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+config.mk:33: ../htslib/htslib.mk: No such file or directory
+
+config.mk:34: ../htslib/htslib_static.mk: No such file or directory
+
+make: *** No rule to make target `../htslib/htslib_static.mk'.  Stop.
+
+
+# Make data base, printed on Tue Aug  9 09:12:16 2022
+
+# Variables
+
+ 
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile (from `config.mk', line 32)
+HTSDIR = ../htslib
+# makefile (from `Makefile', line 221)
+call_h = call.h $(htslib_vcf_h) $(htslib_synced_bcf_reader_h) vcmp.h
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from `Makefile', line 28)
+CPPFLAGS = 
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile (from `Makefile', line 33)
+DYNAMIC_FLAGS = -rdynamic
+# makefile
+CURDIR := /Users/popgendad/GitHub/bcftools
+# makefile
+SHELL = /bin/sh
+# makefile (from `Makefile', line 230)
+smpl_ilist_h = smpl_ilist.h $(htslib_vcf_h)
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 29)
+CFLAGS = -g -Wall -O2
+# makefile (from `Makefile', line 82)
+ALL_LIBS = -lz $(DL_LIBS) $(LIBS)
+# makefile (from `Makefile', line 67)
+INSTALL_SCRIPT = $(INSTALL_PROGRAM)
+# makefile (from `plugins/isecGT.mk', line 1)
+MAKEFILE_LIST :=  Makefile config.mk plugins/GTisec.mk plugins/GTsubset.mk plugins/ad-bias.mk plugins/af-dist.mk plugins/color-chrs.mk plugins/fill-from-fasta.mk plugins/fixploidy.mk plugins/isecGT.mk
+# makefile (from `Makefile', line 62)
+INSTALL = install -p
+# makefile (from `Makefile', line 153)
+PLUGINC = $(foreach dir, plugins, $(wildcard $(dir)/*.c))
+# makefile (from `Makefile', line 35)
+PLUGIN_EXT = .so
+# makefile (from `Makefile', line 34)
+PLUGINS_ENABLED = yes
+# makefile (from `Makefile', line 154)
+PLUGINS = $(PLUGINC:.c=$(PLUGIN_EXT))
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+INFOPATH = /opt/homebrew/share/info:/opt/homebrew/share/info:
+# environment
+VSCODE_CWD = /
+# makefile (from `Makefile', line 222)
+variantkey_h = variantkey.h hex.h
+# makefile (from `Makefile', line 50)
+bindir = $(exec_prefix)/bin
+# environment
+PATH = /Users/popgendad/.local/bin:/usr/local/bin:/Users/popgendad/Library/Python/3.9/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/popgendad/opt/anaconda3/bin:/Users/popgendad/opt/anaconda3/condabin:/Users/popgendad/.local/bin:/Users/popgendad/Library/Python/3.9/bin:/opt/homebrew/bin:/opt/homebrew/sbin
+# makefile (from `Makefile', line 115)
+PACKAGE_VERSION := dfc0b53
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# makefile (from `Makefile', line 65)
+INSTALL_MAN = $(INSTALL_DATA)
+# makefile (from `Makefile', line 232)
+abuf_h = abuf.h $(htslib_vcf_h)
+# makefile (from `Makefile', line 69)
+PROGRAMS = bcftools
+# makefile (from `Makefile', line 220)
+bcftools_h = bcftools.h $(htslib_hts_defs_h) $(htslib_vcf_h) $(htslib_synced_bcf_reader_h)
+# makefile (from `Makefile', line 52)
+libexecdir = $(exec_prefix)/libexec
+# makefile (from `Makefile', line 26)
+AR = ar
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from `Makefile', line 30)
+LDFLAGS = 
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# makefile (from `config.mk', line 39)
+W32_PLUGIN_LIBS = libbcftools.a $(HTSLIB_DLL) $(ALL_LIBS)
+# makefile (from `Makefile', line 234)
+bam2bcf_h = bam2bcf.h $(htslib_hts_h) $(htslib_vcf_h)
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.BVNMgtYvkk/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+CONDA_EXE = /Users/popgendad/opt/anaconda3/bin/conda
+# makefile (from `Makefile', line 235)
+bam_sample_h = bam_sample.h $(htslib_sam_h)
+# makefile (from `Makefile', line 227)
+khash_str2str_h = khash_str2str.h $(htslib_khash_h)
+# makefile (from `Makefile', line 49)
+exec_prefix = $(prefix)
+# makefile (from `config.mk', line 40)
+BGZIP = $(HTSDIR)/bgzip
+# makefile (from `config.mk', line 38)
+HTSLIB_LDFLAGS = $(HTSLIB_static_LDFLAGS)
+# makefile (from `config.mk', line 36)
+HTSLIB_LIB = $(HTSLIB) $(HTSLIB_static_LIBS)
+# makefile (from `Makefile', line 156)
+OBJS = main.o vcfindex.o tabix.o vcfstats.o vcfisec.o vcfmerge.o vcfquery.o vcffilter.o filter.o vcfsom.o vcfnorm.o vcfgtcheck.o vcfview.o vcfannotate.o vcfroh.o vcfconcat.o vcfcall.o mcall.o vcmp.o gvcf.o reheader.o convert.o vcfconvert.o tsv2vcf.o vcfcnv.o vcfhead.o HMM.o consensus.o ploidy.o bin.o hclust.o version.o regidx.o smpl_ilist.o csq.o vcfbuf.o mpileup.o bam2bcf.o bam2bcf_indel.o bam_sample.o vcfsort.o cols.o extsort.o dist.o abuf.o ccall.o em.o prob1.o kmin.o str_finder.o $(PLUGIN_OBJS)
+# environment
+PWD = /Users/popgendad/GitHub/bcftools
+# makefile (from `Makefile', line 70)
+ 
+MISC_SCRIPTS = misc/color-chrs.pl misc/gff2gff.py misc/guess-ploidy.py misc/plot-vcfstats misc/plot-roh.py misc/run-roh.pl misc/vcfutils.pl
+# makefile (from `Makefile', line 87)
+GSL_LIBS = 
+# environment
+HOMEBREW_CELLAR = /opt/homebrew/Cellar
+# makefile (from `Makefile', line 57)
+pluginpath = $(plugindir)
+# makefile (from `Makefile', line 27)
+RANLIB = ranlib
+# makefile (from `Makefile', line 53)
+mandir = $(prefix)/share/man
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# makefile (from `Makefile', line 51)
+libdir = $(exec_prefix)/lib
+# makefile (from `Makefile', line 46)
+PLUGIN_OBJS = vcfplugin.o
+# environment
+MANPATH = /opt/homebrew/share/man:/usr/share/man:/usr/local/share/man:/opt/homebrew/share/man:
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/popgendad
+# default
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/popgendad/Library/Application Support/Code/CachedData/da76f93349a72022ca4670c1b84860304616aaa2
+# environment
+LOGNAME = popgendad
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+CONDA_PROMPT_MODIFIER = (base) 
+# makefile (from `config.mk', line 42)
+HTSLIB_CPPFLAGS = -I$(HTSDIR)
+# environment
+ZSH = /Users/popgendad/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+CONDA_DEFAULT_ENV = base
+# environment
+XPC_FLAGS = 0x0
+# makefile (from `Makefile', line 225)
+filter_h = filter.h $(htslib_vcf_h)
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# makefile (from `Makefile', line 155)
+PLUGINM = $(PLUGINC:.c=.mk)
+# environment
+LOCAL_GIT_DIRECTORY = /Applications/GitHub Desktop.app/Contents/Resources/app/git
+# makefile (from `Makefile', line 25)
+CC = gcc
+# makefile (from `Makefile', line 223)
+convert_h = convert.h $(htslib_vcf_h)
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = popgendad
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from `Makefile', line 233)
+dbuf_h = dbuf.h $(htslib_vcf_h)
+# makefile (from `config.mk', line 37)
+HTSLIB_DLL = $(HTSDIR)/@HTSLIB_DLL@
+# makefile (from `Makefile', line 61)
+MKDIR_P = mkdir -p
+# makefile (from `Makefile', line 224)
+tsv2vcf_h = tsv2vcf.h $(htslib_vcf_h)
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+CONDA_SHLVL = 1
+# default
+MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+# makefile (from `Makefile', line 48)
+prefix = /usr/local
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/pg/d7ly654d0qbf4npqmnnhbb2c0000gp/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/popgendad/Library/Application Support/Code/1.70.0-main.sock
+# environment
+MallocNanoZone = 0
+# makefile (from `config.mk', line 35)
+HTSLIB = $(HTSDIR)/libhts.a
+# makefile (from `Makefile', line 54)
+man1dir = $(mandir)/man1
+# makefile
+MAKEFLAGS = Rrp
+# environment
+MFLAGS = -Rrp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# makefile (from `Makefile', line 116)
+DOC_VERSION := dfc0b53+
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.6921034.6921040
+# makefile (from `Makefile', line 231)
+vcfbuf_h = vcfbuf.h $(htslib_vcf_h)
+# environment
+HOMEBREW_PREFIX = /opt/homebrew
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from `Makefile', line 56)
+plugindir = $(libexecdir)/bcftools
+# makefile (from `config.mk', line 41)
+TABIX = $(HTSDIR)/tabix
+# automatic
++F = $(notdir $+)
+# environment
+HOMEBREW_REPOSITORY = /opt/homebrew
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F6:0x0:0x0
+# makefile (from `Makefile', line 80)
+ALL_CPPFLAGS = -I. $(HTSLIB_CPPFLAGS) $(CPPFLAGS)
+# environment
+COMMAND_MODE = unix2003
+# makefile (from `Makefile', line 159)
+PLATFORM := Darwin
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# makefile (from `Makefile', line 59)
+misc_bindir = $(bindir)
+# environment
+EDITOR = nano
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# makefile (from `Makefile', line 78)
+TEST_PROGRAMS = test/test-rbuf test/test-regidx
+# makefile (from `Makefile', line 66)
+INSTALL_PROGRAM = $(INSTALL)
+# environment
+CONDA_PYTHON_EXE = /Users/popgendad/opt/anaconda3/bin/python
+# makefile (from `Makefile', line 31)
+LIBS = 
+# automatic
+^F = $(notdir $^)
+# makefile (from `Makefile', line 226)
+gvcf_h = gvcf.h $(bcftools_h)
+# default
+SUFFIXES := 
+# makefile (from `Makefile', line 86)
+EXTRA_CPPFLAGS = 
+# environment
+_CE_M = 
+# makefile (from `Makefile', line 229)
+prob1_h = prob1.h $(htslib_vcf_h) $(call_h)
+# makefile (from `Makefile', line 64)
+INSTALL_DIR = $(MKDIR_P) -m 755
+# makefile (from `Makefile', line 63)
+INSTALL_DATA = $(INSTALL) -m 644
+# makefile (from `Makefile', line 117)
+DOC_DATE := 2022-08-09 09:12 PDT
+# environment
+MAKELEVEL := 0
+# makefile (from `Makefile', line 164)
+DL_LIBS = 
+# environment
+CONDA_PREFIX = /Users/popgendad/opt/anaconda3
+# makefile (from `Makefile', line 81)
+ALL_LDFLAGS = $(HTSLIB_LDFLAGS) $(LDFLAGS)
+# environment
+VSCODE_PID = 3124
+# makefile (from `Makefile', line 163)
+PLUGIN_FLAGS = -bundle -bundle_loader bcftools -Wl,-undefined,dynamic_lookup
+# makefile (from `Makefile', line 228)
+ploidy_h = ploidy.h regidx.h
+# environment
+_CE_CONDA = 
+# environment
+LANG = C
+# variable set hash-table stats:
+# Load=147/1024=14%, Rehash=0, Collisions=145/661=22%
+
+# Pattern-specific Variable Values
+ 
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777232, inode 8732516): 112 files, no impossibilities.
+# plugins (device 16777232, inode 8732666): 49 files, no impossibilities.
+
+# 161 files, no impossibilities in 2 directories.
+
+# Implicit Rules
+
+print-%:
+#  commands to execute (from `Makefile', line 149):
+	@echo '$*=$($*)'
+	
+
+%.dll %.cygdll: %.c version.h version.c libbcftools.a ../htslib/@HTSLIB_DLL@
+#  commands to execute (from `Makefile', line 196):
+	$(CC) $(PLUGIN_FLAGS) $(CFLAGS) $(ALL_CPPFLAGS) $(EXTRA_CPPFLAGS) $(LDFLAGS) -o $@ version.c $< $(PLUGIN_LIBS)
+	
+
+%.so: %.c version.h version.c
+#  commands to execute (from `Makefile', line 199):
+	$(CC) $(PLUGIN_FLAGS) $(CFLAGS) $(ALL_CPPFLAGS) $(EXTRA_CPPFLAGS) $(LDFLAGS) -o $@ version.c $< $(LIBS)
+	
+
+%.c:
+
+%.o: %.c
+#  commands to execute (from `Makefile', line 137):
+	$(CC) $(CFLAGS) $(ALL_CPPFLAGS) $(EXTRA_CPPFLAGS) -c -o $@ $<
+	
+
+%.o:
+
+# 6 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+plugins/GTisec.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+docs: doc/bcftools.1 doc/bcftools.html
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+hclust.o: hclust.c bcftools.h hclust.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/GTisec.so: plugins/GTisec.c version.h version.c | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `plugins/GTisec.mk', line 2):
+	$(CC) $(PLUGIN_FLAGS) $(CFLAGS) $(ALL_CPPFLAGS) $(EXTRA_CPPFLAGS) $(LDFLAGS) -o $@ version.c $< $(PLUGIN_LIBS) $(LIBS)
+	
+
+# Not a target:
+doc/bcftools.txt:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../htslib/tabix:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+distclean-all: distclean distclean-htslib
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+plugins/color-chrs.so: plugins/color-chrs.c version.h version.c HMM.h HMM.c | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `plugins/color-chrs.mk', line 2):
+	$(CC) $(PLUGIN_FLAGS) $(CFLAGS) $(ALL_CPPFLAGS) $(EXTRA_CPPFLAGS) $(LDFLAGS) -o $@ HMM.c version.c $< $(PLUGIN_LIBS) $(LIBS)
+	
+
+# Not a target:
+str_finder.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+vcfhead.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/frameshifts.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+plugins/remove-overlaps.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+plugins/parental-origin.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/allele-length.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+smpl_ilist.o: smpl_ilist.c bcftools.h smpl_ilist.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+utlist.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+dist.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+version.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 128):
+	echo '#define BCFTOOLS_VERSION "$(PACKAGE_VERSION)"' > $@
+	
+
+ccall.o: ccall.c call.h vcmp.h kmin.h prob1.h call.h vcmp.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/check-sparsity.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/trio-switch-rate.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/fill-AN-AC.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+plugins/guess-ploidy.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+clean-plugins:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 350):
+	-rm -f plugins/*$(PLUGIN_EXT) plugins/*.P
+	-rm -rf plugins/*.dSYM
+	
+
+# Not a target:
+plugins/GTsubset.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  Last modified 2022-08-09 09:11:54
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+bam_sample.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+hex.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/smpl-stats.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+vcfconvert.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kmin.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+vcfgtcheck.o: vcfgtcheck.c bcftools.h extsort.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+config.mk:
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-09 09:12:16
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 96):
+	@sed -e '/^prefix/,/^PLUGIN_EXT/d;s/@Hsource@//;s/@Hinstall@/#/;s#@HTSDIR@#../htslib#g;s/@HTSLIB_CPPFLAGS@/-I$$(HTSDIR)/g;' config.mk.in > $@
+	
+
+all: bcftools test/test-rbuf test/test-regidx plugins
+#  Phony target (prerequisite of .PHONY).
+#  Command-line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+csq.o: csq.c bcftools.h filter.h regidx.h kheap.h smpl_ilist.h rbuf.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+em.o: em.c kmin.h call.h vcmp.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/fixploidy.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+test/test-regidx.c:
+#  Implicit rule search has not been done.
+ 
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/color-chrs.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: all check check-all clean clean-all clean-plugins distclean distclean-all force install print-version tags test test-all testclean testclean-all plugins docs
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+peakfit.o: peakfit.c peakfit.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+vcmp.o: vcmp.c vcmp.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+khash_str2str.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/contrast.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/missing2ref.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+gvcf.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+mcall.o: mcall.c call.h vcmp.h prob1.h call.h vcmp.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+filter.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+vcfplugin.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/check-ploidy.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+prob1.o: prob1.c prob1.h call.h vcmp.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/split-vep.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+plugins/add-variantkey.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+convert.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/prune.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+distclean: clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 358):
+	-rm -f config.cache config.h config.log config.mk config.status
+	-rm -rf autom4te.cache
+	-rm -f TAGS
+	
+
+vcfcall.o: vcfcall.c bcftools.h call.h vcmp.h prob1.h call.h vcmp.h ploidy.h regidx.h gvcf.h bcftools.h regidx.h vcfbuf.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/ad-bias.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  Last modified 2022-08-09 09:11:54
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+bam2bcf_indel.o: bam2bcf_indel.c bam2bcf.h str_finder.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+dist.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bam2bcf.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+vcfmerge.o: vcfmerge.c regidx.h bcftools.h vcmp.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+mw.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+vcfsort.o: vcfsort.c kheap.h bcftools.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/isecGT.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+vcfcnv.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bam_sample.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+tsv2vcf.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/gvcfz.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+test/test-rbuf: test/test-rbuf.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 316):
+	$(CC) $(LDFLAGS) -o $@ $^ $(ALL_LIBS)
+	
+
+.SUFFIXES: .c .o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+tags:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 369):
+	ctags -f TAGS *.[ch] plugins/*.[ch]
+	
+
+# Not a target:
+plugins/scatter.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+plugins/fixploidy.so: plugins/fixploidy.c version.h version.c regidx.h regidx.c ploidy.h ploidy.c | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `plugins/fixploidy.mk', line 2):
+	$(CC) $(PLUGIN_FLAGS) $(CFLAGS) $(ALL_CPPFLAGS) $(EXTRA_CPPFLAGS) $(LDFLAGS) -o $@ ploidy.c regidx.c version.c $< $(PLUGIN_LIBS) $(LIBS)
+	
+
+# Not a target:
+mpileup.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+consensus.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-09 09:11:54
+#  File has not been updated.
+
+plugins/mendelian.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/tag2tag.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+plugins/counts.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/fill-tags.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+plugins/af-dist.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ 
+# Not a target:
+vcfbuf.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+vcffilter.o: vcffilter.c bcftools.h filter.h rbuf.h regidx.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/af-dist.so: plugins/af-dist.c version.h version.c bin.h bin.c | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `plugins/af-dist.mk', line 2):
+	$(CC) $(PLUGIN_FLAGS) $(CFLAGS) $(ALL_CPPFLAGS) $(EXTRA_CPPFLAGS) $(LDFLAGS) -o $@ bin.c version.c $< $(PLUGIN_LIBS) $(LIBS)
+	
+
+# Not a target:
+smpl_ilist.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+check-plugins: bcftools test/test-rbuf test/test-regidx ../htslib/bgzip ../htslib/tabix plugins
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 306):
+	./test/test-rbuf
+	./test/test-regidx
+	REF_PATH=: ./test/test.pl --plugins --exec bgzip=$(BGZIP) --exec tabix=$(TABIX) --htsdir=$(HTSDIR) $${TEST_OPTS:-}
+	
+
+# Not a target:
+filter.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/prune.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+vcfindex.o: vcfindex.c bcftools.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../htslib/libhts.a:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+test: test-plugins
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+plugins/missing2ref.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../htslib/bgzip:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+vcfbuf.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+convert.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/impute-info.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+vcfquery.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+prob1.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+extsort.o: extsort.c bcftools.h extsort.h kheap.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+abuf.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/fixref.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+vcfview.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+vcfsom.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+vcfroh.o: vcfroh.c bcftools.h HMM.h smpl_ilist.h filter.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bam2bcf.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+libbcftools.a: main.o vcfindex.o tabix.o vcfstats.o vcfisec.o vcfmerge.o vcfquery.o vcffilter.o filter.o vcfsom.o vcfnorm.o vcfgtcheck.o vcfview.o vcfannotate.o vcfroh.o vcfconcat.o vcfcall.o mcall.o vcmp.o gvcf.o reheader.o convert.o vcfconvert.o tsv2vcf.o vcfcnv.o vcfhead.o HMM.o consensus.o ploidy.o bin.o hclust.o version.o regidx.o smpl_ilist.o csq.o vcfbuf.o mpileup.o bam2bcf.o bam2bcf_indel.o bam_sample.o vcfsort.o cols.o extsort.o dist.o abuf.o ccall.o em.o prob1.o kmin.o str_finder.o vcfplugin.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 189):
+	@-rm -f $@
+	$(AR) -rc $@ $(OBJS)
+	-$(RANLIB) $@
+	
+
+# Not a target:
+bin.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+abuf.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+HMM.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+distclean-htslib:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+tsv2vcf.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/frameshifts.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/remove-overlaps.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/allele-length.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+test-all: test-htslib test
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+plugins/fill-from-fasta.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  Last modified 2022-08-09 09:11:54
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+vcfisec.o: vcfisec.c bcftools.h filter.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+rbuf.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ccall.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/variant-distance.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+ 
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+vcfsom.o: vcfsom.c bcftools.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+regidx.o: regidx.c regidx.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/GTsubset.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+cols.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/fill-AN-AC.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/guess-ploidy.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+csq.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/GTsubset.so: plugins/GTsubset.c version.h version.c | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `plugins/GTsubset.mk', line 2):
+	$(CC) $(PLUGIN_FLAGS) $(CFLAGS) $(ALL_CPPFLAGS) $(EXTRA_CPPFLAGS) $(LDFLAGS) -o $@ version.c $< $(PLUGIN_LIBS) $(LIBS)
+	
+
+test-plugins: bcftools test/test-rbuf test/test-regidx ../htslib/bgzip ../htslib/tabix plugins
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 306):
+	./test/test-rbuf
+	./test/test-regidx
+	REF_PATH=: ./test/test.pl --plugins --exec bgzip=$(BGZIP) --exec tabix=$(TABIX) --htsdir=$(HTSDIR) $${TEST_OPTS:-}
+	
+
+vcfstats.o: vcfstats.c bcftools.h filter.h bin.h dist.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.c.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 137):
+	$(CC) $(CFLAGS) $(ALL_CPPFLAGS) $(EXTRA_CPPFLAGS) -c -o $@ $<
+	
+
+plugins: plugins/GTisec.so plugins/GTsubset.so plugins/ad-bias.so plugins/add-variantkey.so plugins/af-dist.so plugins/allele-length.so plugins/check-ploidy.so plugins/check-sparsity.so plugins/color-chrs.so plugins/contrast.so plugins/counts.so plugins/dosage.so plugins/fill-AN-AC.so plugins/fill-from-fasta.so plugins/fill-tags.so plugins/fixploidy.so plugins/fixref.so plugins/frameshifts.so plugins/guess-ploidy.so plugins/gvcfz.so plugins/impute-info.so plugins/indel-stats.so plugins/isecGT.so plugins/mendelian.so plugins/missing2ref.so plugins/parental-origin.so plugins/prune.so plugins/remove-overlaps.so plugins/scatter.so plugins/setGT.so plugins/smpl-stats.so plugins/split-vep.so plugins/split.so plugins/tag2tag.so plugins/trio-dnm2.so plugins/trio-stats.so plugins/trio-switch-rate.so plugins/variant-distance.so plugins/variantkey-hex.so
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+peakfit.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+vcmp.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../htslib/htslib.mk:
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+vcfnorm.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+test-htslib:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+vcfview.o: vcfview.c bcftools.h filter.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+hclust.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+mcall.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bcftools: main.o vcfindex.o tabix.o vcfstats.o vcfisec.o vcfmerge.o vcfquery.o vcffilter.o filter.o vcfsom.o vcfnorm.o vcfgtcheck.o vcfview.o vcfannotate.o vcfroh.o vcfconcat.o vcfcall.o mcall.o vcmp.o gvcf.o reheader.o convert.o vcfconvert.o tsv2vcf.o vcfcnv.o vcfhead.o HMM.o consensus.o ploidy.o bin.o hclust.o version.o regidx.o smpl_ilist.o csq.o vcfbuf.o mpileup.o bam2bcf.o bam2bcf_indel.o bam_sample.o vcfsort.o cols.o extsort.o dist.o abuf.o ccall.o em.o prob1.o kmin.o str_finder.o vcfplugin.o ../htslib/libhts.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 216):
+	$(CC) $(DYNAMIC_FLAGS) $(ALL_LDFLAGS) -o $@ $(OBJS) $(HTSLIB_LIB) -lm $(ALL_LIBS) $(GSL_LIBS) $(PERL_LIBS) -lpthread
+	
+
+# Not a target:
+hclust.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+force:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+vcfannotate.o: vcfannotate.c bcftools.h vcmp.h filter.h convert.h smpl_ilist.h regidx.h dbuf.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+version.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/variantkey-hex.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+reheader.o: reheader.c bcftools.h khash_str2str.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+str_finder.o: str_finder.h utlist.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+vcfroh.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bin.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/split-vep.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+print-version:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 131):
+	@echo $(PACKAGE_VERSION)
+	
+
+vcfnorm.o: vcfnorm.c bcftools.h rbuf.h abuf.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+polysomy.o: polysomy.c bcftools.h peakfit.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+vcfcall.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/ad-bias.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bam2bcf_indel.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/ad-bias.so: plugins/ad-bias.c version.h version.c convert.h convert.c | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `plugins/ad-bias.mk', line 2):
+	$(CC) $(PLUGIN_FLAGS) $(CFLAGS) $(ALL_CPPFLAGS) $(EXTRA_CPPFLAGS) $(LDFLAGS) -o $@ convert.c version.c $< $(PLUGIN_LIBS) $(LIBS)
+	
+
+# Not a target:
+ 
+vcfsort.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/trio-stats.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+doc/bcftools.1: doc/bcftools.txt
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 326):
+	cd doc && asciidoctor -adate="$(DOC_DATE)" -aversion=$(DOC_VERSION) -b manpage -a linkcss -a stylesheet=docbook-xsl.css bcftools.txt
+	
+
+version.o: version.h version.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+vcfconcat.o: vcfconcat.c bcftools.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/split.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+../htslib/htslib_static.mk:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bin.o: bin.c bcftools.h bin.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ploidy.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+config.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 99):
+	echo '/* Basic config.h generated by Makefile */' > $@
+	echo '#define ENABLE_BCF_PLUGINS 1' >> $@
+	echo '#define PLUGIN_EXT "$(PLUGIN_EXT)"' >> $@
+	
+
+# Not a target:
+plugins/indel-stats.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+kmin.o: kmin.c kmin.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/setGT.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+vcfgtcheck.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/fill-tags.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+peakfit.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+vcmp.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/scatter.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/isecGT.so: plugins/isecGT.c version.h version.c smpl_ilist.h | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `plugins/isecGT.mk', line 2):
+	$(CC) $(PLUGIN_FLAGS) $(CFLAGS) $(ALL_CPPFLAGS) $(EXTRA_CPPFLAGS) $(LDFLAGS) -o $@ smpl_ilist.c version.c $< $(PLUGIN_LIBS) $(LIBS)
+	
+
+# Not a target:
+vcffilter.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/GTisec.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  Last modified 2022-08-09 09:11:54
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+gvcf.o: gvcf.c gvcf.h bcftools.h bcftools.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+vcfindex.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/color-chrs.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  Last modified 2022-08-09 09:11:54
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+prob1.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+doc/bcftools.html: doc/bcftools.txt
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 329):
+	cd doc && asciidoctor -adate="$(DOC_DATE)" -aversion=$(DOC_VERSION) -b html5 -a linkcss -a stylesheet=docbook-xsl.css bcftools.txt
+	
+
+# Not a target:
+plugins/parental-origin.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+plugins/trio-dnm2.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+vcfhead.o: vcfhead.c bcftools.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kheap.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+extsort.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+test/test-regidx.o: test/test-regidx.c regidx.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+ 
+
+# Not a target:
+plugins/check-sparsity.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+plugins/trio-switch-rate.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+test/test-rbuf.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+dist.o: dist.c dist.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+test-no-plugins: bcftools test/test-rbuf test/test-regidx ../htslib/bgzip ../htslib/tabix
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 301):
+	./test/test-rbuf
+	./test/test-regidx
+	REF_PATH=: ./test/test.pl --exec bgzip=$(BGZIP) --exec tabix=$(TABIX) --htsdir=$(HTSDIR) $${TEST_OPTS:-}
+	
+
+# Not a target:
+plugins/smpl-stats.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+tabix.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ploidy.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/tag2tag.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bam_sample.o: bam_sample.c khash_str2str.h bam_sample.h bcftools.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+reheader.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+vcfconvert.o: vcfconvert.c bcftools.h filter.h convert.h tsv2vcf.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/fill-from-fasta.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/dosage.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+gvcf.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/impute-info.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+HMM.o: HMM.c HMM.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean-all: clean clean-htslib
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+plugins/fill-from-fasta.so: plugins/fill-from-fasta.c version.h version.c filter.h filter.c | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `plugins/fill-from-fasta.mk', line 2):
+	$(CC) $(PLUGIN_FLAGS) $(CFLAGS) $(ALL_CPPFLAGS) $(EXTRA_CPPFLAGS) $(PERL_CFLAGS) $(LDFLAGS) -o $@ filter.c version.c $< $(PLUGIN_LIBS) $(LIBS)
+	
+
+test/test-rbuf.o: test/test-rbuf.c rbuf.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+test/test-regidx: test/test-regidx.o regidx.o | ../htslib/libhts.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 321):
+	$(CC) $(ALL_LDFLAGS) -o $@ $^ $(HTSLIB_LIB) -lpthread $(ALL_LIBS)
+	
+
+# Not a target:
+plugins/contrast.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+regidx.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+call.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+testclean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 354):
+	-rm -f test/*.o test/*.fa.fai test/*~ $(TEST_PROGRAMS)
+	-rm -f test/*.unsorted.hex test/*.unsorted.tsv
+	
+
+plugins/variant-distance.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/check-ploidy.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+ 
+vcfstats.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/trio-stats.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+filter.o: filter.c config.h filter.h bcftools.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 265):
+	$(CC) $(CFLAGS) $(ALL_CPPFLAGS) $(EXTRA_CPPFLAGS) $(PERL_CFLAGS) -c -o $@ $<
+	
+
+vcfplugin.o: vcfplugin.c config.h bcftools.h vcmp.h filter.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# makefile (from `Makefile', line 193)
+# EXTRA_CPPFLAGS += -DPLUGINPATH='"$(pluginpath)"'
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/2=0%
+
+main.o: main.c config.h version.h bcftools.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/isecGT.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  Last modified 2022-08-09 09:11:54
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+plugins/add-variantkey.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+smpl_ilist.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+HMM.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+vcfmerge.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+convert.o: convert.c bcftools.h variantkey.h hex.h convert.h filter.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+extsort.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+clean-htslib:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+mpileup.o: mpileup.c regidx.h bcftools.h bam2bcf.h bam_sample.h gvcf.h bcftools.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+abuf.o: abuf.c bcftools.h rbuf.h abuf.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+vcfannotate.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/trio-dnm2.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+bam2bcf.o: bam2bcf.c bam2bcf.h mw.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+em.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+testclean-all: testclean testclean-htslib
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+plugins/gvcfz.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+vcfcnv.o: vcfcnv.c bcftools.h HMM.h rbuf.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/variantkey-hex.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+check: bcftools test/test-rbuf test/test-regidx ../htslib/bgzip ../htslib/tabix test-plugins
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 301):
+	./test/test-rbuf
+	./test/test-regidx
+	REF_PATH=: ./test/test.pl --exec bgzip=$(BGZIP) --exec tabix=$(TABIX) --htsdir=$(HTSDIR) $${TEST_OPTS:-}
+	
+
+# Not a target:
+cols.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+tsv2vcf.o: tsv2vcf.c tsv2vcf.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+polysomy.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/fixploidy.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  Last modified 2022-08-09 09:11:54
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/mendelian.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+vcfisec.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/counts.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+consensus.o: consensus.c regidx.h bcftools.h rbuf.h filter.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+regidx.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+vcfconcat.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/af-dist.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  Last modified 2022-08-09 09:11:54
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+dbuf.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+ 
+#  File has not been updated.
+
+plugins/split.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+cols.o: cols.c cols.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kmin.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+tabix.o: tabix.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/indel-stats.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean: testclean clean-plugins
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 346):
+	-rm -f gmon.out *.o *.a *~ $(PROGRAMS) version.h
+	-rm -rf *.dSYM test/*.dSYM
+	
+
+ploidy.o: ploidy.c bcftools.h ploidy.h regidx.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+plugins/setGT.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+testclean-htslib:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+variantkey.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+check-all: test-htslib test
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+install: bcftools plugins/GTisec.so plugins/GTsubset.so plugins/ad-bias.so plugins/add-variantkey.so plugins/af-dist.so plugins/allele-length.so plugins/check-ploidy.so plugins/check-sparsity.so plugins/color-chrs.so plugins/contrast.so plugins/counts.so plugins/dosage.so plugins/fill-AN-AC.so plugins/fill-from-fasta.so plugins/fill-tags.so plugins/fixploidy.so plugins/fixref.so plugins/frameshifts.so plugins/guess-ploidy.so plugins/gvcfz.so plugins/impute-info.so plugins/indel-stats.so plugins/isecGT.so plugins/mendelian.so plugins/missing2ref.so plugins/parental-origin.so plugins/prune.so plugins/remove-overlaps.so plugins/scatter.so plugins/setGT.so plugins/smpl-stats.so plugins/split-vep.so plugins/split.so plugins/tag2tag.so plugins/trio-dnm2.so plugins/trio-stats.so plugins/trio-switch-rate.so plugins/variant-distance.so plugins/variantkey-hex.so
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 339):
+	$(INSTALL_DIR) $(DESTDIR)$(bindir) $(DESTDIR)$(man1dir) $(DESTDIR)$(plugindir)
+	$(INSTALL_PROGRAM) $(PROGRAMS) $(DESTDIR)$(bindir)
+	$(INSTALL_SCRIPT) $(MISC_SCRIPTS) $(DESTDIR)$(misc_bindir)
+	$(INSTALL_MAN) doc/bcftools.1 $(DESTDIR)$(man1dir)
+	$(INSTALL_PROGRAM) plugins/*$(PLUGIN_EXT) $(DESTDIR)$(plugindir)
+	
+
+vcfbuf.o: vcfbuf.c bcftools.h vcfbuf.h rbuf.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bcftools.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+plugins/fixref.mk:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+plugins/dosage.so: | bcftools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+vcfquery.o: vcfquery.c bcftools.h filter.h convert.h smpl_ilist.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=274/1024=27%, Rehash=0, Collisions=199/880=23%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 43
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 3183 / max = 3183 / min = 3183 / avg = 3183
+
+# Finished Make data base on Tue Aug  9 09:12:16 2022
+
+ 
